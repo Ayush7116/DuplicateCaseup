@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Parallel.ParallelRun" time="900.515" tests="18" errors="0" skipped="0" failures="12">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
+    <property name="java.class.path" value="C:\Users\ui-qa-22-1\Documents\Duplicate CaseUp\Duplicate CaseUp\target\test-classes;C:\Users\ui-qa-22-1\Documents\Duplicate CaseUp\Duplicate CaseUp\target\classes;C:\Users\ui-qa-22-1\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.12.1\maven-compiler-plugin-3.12.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.4.2\maven-shared-utils-3.4.2.jar;C:\Users\ui-qa-22-1\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-java\1.2.0\plexus-java-1.2.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\ui-qa-22-1\.m2\repository\com\thoughtworks\qdox\qdox\2.0.3\qdox-2.0.3.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.14.2\plexus-compiler-api-2.14.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.14.2\plexus-compiler-manager-2.14.2.jar;C:\Users\ui-qa-22-1\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-xml\4.0.1\plexus-xml-4.0.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\maven\maven-xml-impl\4.0.0-alpha-5\maven-xml-impl-4.0.0-alpha-5.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\maven\maven-api-xml\4.0.0-alpha-5\maven-api-xml-4.0.0-alpha-5.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\maven\maven-api-meta\4.0.0-alpha-5\maven-api-meta-4.0.0-alpha-5.jar;C:\Users\ui-qa-22-1\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.3.5\org.eclipse.sisu.plexus-0.3.5.jar;C:\Users\ui-qa-22-1\.m2\repository\javax\annotation\javax.annotation-api\1.2\javax.annotation-api-1.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.3.5\org.eclipse.sisu.inject-0.3.5.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.5.2\plexus-classworlds-2.5.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.14.2\plexus-compiler-javac-2.14.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-utils\4.0.0\plexus-utils-4.0.0.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-java\6.9.1\cucumber-java-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-core\6.9.1\cucumber-core-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-gherkin\6.9.1\cucumber-gherkin-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.9.1\cucumber-gherkin-messages-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\messages\13.2.1\messages-13.2.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-plugin\6.9.1\cucumber-plugin-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\docstring\6.9.1\docstring-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\create-meta\2.0.4\create-meta-2.0.4.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-junit\6.9.1\cucumber-junit-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ui-qa-22-1\.m2\repository\com\paulhammant\ngwebdriver\1.1.6\ngwebdriver-1.1.6.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-java\4.17.0\selenium-java-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-api\4.17.0\selenium-api-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.17.0\selenium-chrome-driver-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.17.0\selenium-chromium-driver-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-json\4.17.0\selenium-json-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.17.0\selenium-manager-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.17.0\selenium-devtools-v119-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.17.0\selenium-devtools-v120-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.17.0\selenium-devtools-v121-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.17.0\selenium-devtools-v85-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.17.0\selenium-edge-driver-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.17.0\selenium-firefox-driver-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-http\4.17.0\selenium-http-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.17.0\selenium-ie-driver-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.17.0\selenium-remote-driver-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\guava\guava\33.0.0-jre\guava-33.0.0-jre.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\errorprone\error_prone_annotations\2.23.0\error_prone_annotations-2.23.0.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-api\1.34.1\opentelemetry-api-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-context\1.34.1\opentelemetry-context-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.34.1\opentelemetry-exporter-logging-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.34.1\opentelemetry-sdk-common-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.34.1\opentelemetry-sdk-extension-autoconfigure-spi-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.34.1\opentelemetry-sdk-extension-autoconfigure-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.34.1-alpha\opentelemetry-api-events-1.34.1-alpha.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.34.1\opentelemetry-sdk-trace-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.34.1\opentelemetry-sdk-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.34.1\opentelemetry-sdk-metrics-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.34.1-alpha\opentelemetry-extension-incubator-1.34.1-alpha.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.34.1\opentelemetry-sdk-logs-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-os\4.17.0\selenium-os-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.17.0\selenium-safari-driver-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-support\4.17.0\selenium-support-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\ui-qa-22-1\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\ui-qa-22-1\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\ui-qa-22-1\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\ui-qa-22-1\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\ui-qa-22-1\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\ui-qa-22-1\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\ui-qa-22-1\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\ui-qa-22-1\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\ui-qa-22-1\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\ui-qa-22-1\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\ui-qa-22-1\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\ui-qa-22-1\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\ui-qa-22-1\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\ui-qa-22-1\.m2\repository\tech\grasshopper\extentreports-cucumber6-adapter\2.8.2\extentreports-cucumber6-adapter-2.8.2.jar;C:\Users\ui-qa-22-1\.m2\repository\com\aventstack\extentreports\5.0.6\extentreports-5.0.6.jar;C:\Users\ui-qa-22-1\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\ui-qa-22-1\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\ui-qa-22-1\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\ui-qa-22-1\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\ui-qa-22-1\.m2\repository\tech\grasshopper\extent-pdf-report\1.7.2\extent-pdf-report-1.7.2.jar;C:\Users\ui-qa-22-1\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.2.3\cucumber-pdf-report-2.2.3.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\pdfbox\pdfbox\2.0.22\pdfbox-2.0.22.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\pdfbox\fontbox\2.0.22\fontbox-2.0.22.jar;C:\Users\ui-qa-22-1\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\ui-qa-22-1\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\ui-qa-22-1\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\ui-qa-22-1\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\ui-qa-22-1\.m2\repository\org\yaml\snakeyaml\1.28\snakeyaml-1.28.jar;C:\Users\ui-qa-22-1\.m2\repository\tech\grasshopper\table-layout\1.2.0\table-layout-1.2.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\ui-qa-22-1\.m2\repository\com\aventstack\klov-reporter\5.0.6\klov-reporter-5.0.6.jar;C:\Users\ui-qa-22-1\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\ui-qa-22-1\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\ui-qa-22-1\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-testng\6.9.1\cucumber-testng-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\ui-qa-22-1\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\ui-qa-22-1\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\json\json\20201115\json-20201115.jar;C:\Users\ui-qa-22-1\.m2\repository\com\googlecode\json-simple\json-simple\1.1\json-simple-1.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\ui-qa-22-1\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\ui-qa-22-1\.m2\repository\org\slf4j\slf4j-api\2.0.0-alpha2\slf4j-api-2.0.0-alpha2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\slf4j\slf4j-simple\2.0.0-alpha2\slf4j-simple-2.0.0-alpha2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\ui-qa-22-1\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\ui-qa-22-1\AppData\Local\Temp\surefire3756748194890951805\surefirebooter-20240212135332788_3.jar C:\Users\ui-qa-22-1\AppData\Local\Temp\surefire3756748194890951805 2024-02-12T13-53-32_470-jvmRun1 surefire-20240212135332788_1tmp surefire_0-20240212135332788_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\ui-qa-22-1\Documents\Duplicate CaseUp\Duplicate CaseUp\target\test-classes;C:\Users\ui-qa-22-1\Documents\Duplicate CaseUp\Duplicate CaseUp\target\classes;C:\Users\ui-qa-22-1\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.12.1\maven-compiler-plugin-3.12.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.4.2\maven-shared-utils-3.4.2.jar;C:\Users\ui-qa-22-1\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-java\1.2.0\plexus-java-1.2.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\ui-qa-22-1\.m2\repository\com\thoughtworks\qdox\qdox\2.0.3\qdox-2.0.3.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.14.2\plexus-compiler-api-2.14.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.14.2\plexus-compiler-manager-2.14.2.jar;C:\Users\ui-qa-22-1\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-xml\4.0.1\plexus-xml-4.0.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\maven\maven-xml-impl\4.0.0-alpha-5\maven-xml-impl-4.0.0-alpha-5.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\maven\maven-api-xml\4.0.0-alpha-5\maven-api-xml-4.0.0-alpha-5.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\maven\maven-api-meta\4.0.0-alpha-5\maven-api-meta-4.0.0-alpha-5.jar;C:\Users\ui-qa-22-1\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.3.5\org.eclipse.sisu.plexus-0.3.5.jar;C:\Users\ui-qa-22-1\.m2\repository\javax\annotation\javax.annotation-api\1.2\javax.annotation-api-1.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.3.5\org.eclipse.sisu.inject-0.3.5.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.5.2\plexus-classworlds-2.5.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.14.2\plexus-compiler-javac-2.14.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\codehaus\plexus\plexus-utils\4.0.0\plexus-utils-4.0.0.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-java\6.9.1\cucumber-java-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-core\6.9.1\cucumber-core-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-gherkin\6.9.1\cucumber-gherkin-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.9.1\cucumber-gherkin-messages-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\messages\13.2.1\messages-13.2.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-plugin\6.9.1\cucumber-plugin-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\docstring\6.9.1\docstring-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\create-meta\2.0.4\create-meta-2.0.4.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-junit\6.9.1\cucumber-junit-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ui-qa-22-1\.m2\repository\com\paulhammant\ngwebdriver\1.1.6\ngwebdriver-1.1.6.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-java\4.17.0\selenium-java-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-api\4.17.0\selenium-api-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.17.0\selenium-chrome-driver-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.17.0\selenium-chromium-driver-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-json\4.17.0\selenium-json-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.17.0\selenium-manager-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.17.0\selenium-devtools-v119-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.17.0\selenium-devtools-v120-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.17.0\selenium-devtools-v121-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.17.0\selenium-devtools-v85-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.17.0\selenium-edge-driver-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.17.0\selenium-firefox-driver-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-http\4.17.0\selenium-http-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.17.0\selenium-ie-driver-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.17.0\selenium-remote-driver-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\guava\guava\33.0.0-jre\guava-33.0.0-jre.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\errorprone\error_prone_annotations\2.23.0\error_prone_annotations-2.23.0.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-api\1.34.1\opentelemetry-api-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-context\1.34.1\opentelemetry-context-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.34.1\opentelemetry-exporter-logging-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.34.1\opentelemetry-sdk-common-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.34.1\opentelemetry-sdk-extension-autoconfigure-spi-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.34.1\opentelemetry-sdk-extension-autoconfigure-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.34.1-alpha\opentelemetry-api-events-1.34.1-alpha.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.34.1\opentelemetry-sdk-trace-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.34.1\opentelemetry-sdk-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.34.1\opentelemetry-sdk-metrics-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.34.1-alpha\opentelemetry-extension-incubator-1.34.1-alpha.jar;C:\Users\ui-qa-22-1\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.34.1\opentelemetry-sdk-logs-1.34.1.jar;C:\Users\ui-qa-22-1\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-os\4.17.0\selenium-os-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.17.0\selenium-safari-driver-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\seleniumhq\selenium\selenium-support\4.17.0\selenium-support-4.17.0.jar;C:\Users\ui-qa-22-1\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\ui-qa-22-1\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\ui-qa-22-1\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\ui-qa-22-1\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\ui-qa-22-1\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\ui-qa-22-1\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\ui-qa-22-1\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\ui-qa-22-1\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\ui-qa-22-1\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\ui-qa-22-1\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\ui-qa-22-1\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\ui-qa-22-1\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\ui-qa-22-1\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\ui-qa-22-1\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\ui-qa-22-1\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\ui-qa-22-1\.m2\repository\tech\grasshopper\extentreports-cucumber6-adapter\2.8.2\extentreports-cucumber6-adapter-2.8.2.jar;C:\Users\ui-qa-22-1\.m2\repository\com\aventstack\extentreports\5.0.6\extentreports-5.0.6.jar;C:\Users\ui-qa-22-1\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\ui-qa-22-1\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\ui-qa-22-1\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\ui-qa-22-1\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\ui-qa-22-1\.m2\repository\tech\grasshopper\extent-pdf-report\1.7.2\extent-pdf-report-1.7.2.jar;C:\Users\ui-qa-22-1\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.2.3\cucumber-pdf-report-2.2.3.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\pdfbox\pdfbox\2.0.22\pdfbox-2.0.22.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\pdfbox\fontbox\2.0.22\fontbox-2.0.22.jar;C:\Users\ui-qa-22-1\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\ui-qa-22-1\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\ui-qa-22-1\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\ui-qa-22-1\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\ui-qa-22-1\.m2\repository\org\yaml\snakeyaml\1.28\snakeyaml-1.28.jar;C:\Users\ui-qa-22-1\.m2\repository\tech\grasshopper\table-layout\1.2.0\table-layout-1.2.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\ui-qa-22-1\.m2\repository\com\aventstack\klov-reporter\5.0.6\klov-reporter-5.0.6.jar;C:\Users\ui-qa-22-1\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\ui-qa-22-1\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\ui-qa-22-1\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\ui-qa-22-1\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\ui-qa-22-1\.m2\repository\io\cucumber\cucumber-testng\6.9.1\cucumber-testng-6.9.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\ui-qa-22-1\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\ui-qa-22-1\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\json\json\20201115\json-20201115.jar;C:\Users\ui-qa-22-1\.m2\repository\com\googlecode\json-simple\json-simple\1.1\json-simple-1.1.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\ui-qa-22-1\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\ui-qa-22-1\.m2\repository\org\slf4j\slf4j-api\2.0.0-alpha2\slf4j-api-2.0.0-alpha2.jar;C:\Users\ui-qa-22-1\.m2\repository\org\slf4j\slf4j-simple\2.0.0-alpha2\slf4j-simple-2.0.0-alpha2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\ui-qa-22-1"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\Users\ui-qa-22-1\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="C:\Users\ui-qa-22-1\Documents\Duplicate CaseUp\Duplicate CaseUp"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\ui-qa-22-1\AppData\Local\Temp\surefire3756748194890951805\surefirebooter-20240212135332788_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.10+7"/>
+    <property name="user.name" value="ui-qa-22-1"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.10+7"/>
+    <property name="localRepository" value="C:\Users\ui-qa-22-1\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\UI-QA-~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.10"/>
+    <property name="user.dir" value="C:\Users\ui-qa-22-1\Documents\Duplicate CaseUp\Duplicate CaseUp"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\ui-qa-22-1\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/ui-qa-22-1/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143/jre/bin/server;C:/Users/ui-qa-22-1/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_341\bin;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jre1.8.0_341\bin;C:\Program Files\Java\jdk-14.0.2\bin;C:\Users\ui-qa-22-1\AppData\Local\Microsoft\WindowsApps;C:\Users\ui-qa-22-1\AppData\Roaming\npm;C:\Users\ui-qa-22-1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ui-qa-22-1\AppData\Local\GitHubDesktop\bin;C:\Users\ui-qa-22-1\eclipse\java-2023-12\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.10+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Checking previous exhibit functionality of caseUp with admin&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](1)" classname="Parallel.ParallelRun" time="34.528">
+    <failure message="timeout: Timed out receiving message from renderer: 28.733&#10;  (Session info: chrome=121.0.6167.161)&#10;Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3c7c2d6cc899404219c6c05af6277691, get {url=https://staging.virtualdepo.com/manager/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58320}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58320/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3c7c2d6cc899404219c6c05af6277691" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 28.733
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3c7c2d6cc899404219c6c05af6277691, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58320}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58320/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c7c2d6cc899404219c6c05af6277691
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+]]></failure>
+    <system-out><![CDATA[
+@Present
+Scenario: Checking previous exhibit functionality of caseUp with admin # src/test/resources/Parallel/Present.feature:442
+browser value is: chrome
+      org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.733
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3c7c2d6cc899404219c6c05af6277691, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58320}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58320/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c7c2d6cc899404219c6c05af6277691
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+
+  Given user navigate to the caseup baseurl                            # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with admin role                                           # Parallel.PresentTest.login_with_admin_role()
+  When click on create new button                                      # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                              # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                         # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                                  # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                          # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                                     # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                                  # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                          # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                         # Parallel.PresentTest.click_on_present_button()
+  Then click on new button                                             # Parallel.PresentTest.click_on_new_button()
+  And click on previous exhibit button                                 # Parallel.PresentTest.click_on_previous_exhibit_button()
+  Then click on share button                                           # Parallel.PresentTest.click_on_share_button()
+  Then click on shared button                                          # Parallel.PresentTest.click_on_shared_button()
+  When click on dotted dropped menu of selected file                   # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  Then click on undo exhibit button                                    # Parallel.PresentTest.click_on_undo_exhibit_button()
+  And click on yes button for undo deposition                          # Parallel.PresentTest.click_on_yes_button_for_undo_deposition()
+  Then click on cancle button for shared section                       # Parallel.PresentTest.click_on_cancle_button_for_shared_section()
+  When click on dotted dropped menu of created deposition              # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                           # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                             # Parallel.CreateDepositionTest.click_on_yes_button()
+
+    Embedding Checking_previous_exhibit_functionality_of_caseUp_with_admin [image/png 86262 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking download functionality of caseUp with admin&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](2)" classname="Parallel.ParallelRun" time="31.727">
+    <failure message="timeout: Timed out receiving message from renderer: 28.803&#10;  (Session info: chrome=121.0.6167.161)&#10;Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [2bc5368cdd5126cb7dc92552a9416d61, get {url=https://staging.virtualdepo.com/manager/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58365}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58365/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2bc5368cdd5126cb7dc92552a9416d61" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 28.803
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bc5368cdd5126cb7dc92552a9416d61, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58365}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58365/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bc5368cdd5126cb7dc92552a9416d61
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+]]></failure>
+    <system-out><![CDATA[
+@Present
+Scenario: Checking download functionality of caseUp with admin # src/test/resources/Parallel/Present.feature:465
+browser value is: chrome
+      org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.803
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2bc5368cdd5126cb7dc92552a9416d61, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58365}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58365/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2bc5368cdd5126cb7dc92552a9416d61
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+
+  Given user navigate to the caseup baseurl                    # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with admin role                                   # Parallel.PresentTest.login_with_admin_role()
+  When click on create new button                              # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                      # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                 # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                          # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                  # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                             # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                          # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                  # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                 # Parallel.PresentTest.click_on_present_button()
+  When click on dotted dropped menu of selected file           # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  And click on download button                                 # Parallel.PresentTest.click_on_download_button()
+  Then click on introduce button                               # Parallel.PresentTest.click_on_introduce_button()
+  Then click on shared button                                  # Parallel.PresentTest.click_on_shared_button()
+  When click on dotted dropped menu of selected file           # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  And click on download button                                 # Parallel.PresentTest.click_on_download_button()
+  Then click on cancle button for shared section               # Parallel.PresentTest.click_on_cancle_button_for_shared_section()
+  When click on dotted dropped menu of created deposition      # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                   # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                     # Parallel.CreateDepositionTest.click_on_yes_button()
+
+    Embedding Checking_download_functionality_of_caseUp_with_admin [image/png 86301 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking sync and preview exhibit functionality of caseUp with admin&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](3)" classname="Parallel.ParallelRun" time="91.869">
+    <system-out><![CDATA[
+@Present
+Scenario: Checking sync and preview exhibit functionality of caseUp with admin # src/test/resources/Parallel/Present.feature:487
+browser value is: chrome
+  Given user navigate to the caseup baseurl                                    # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with admin role                                                   # Parallel.PresentTest.login_with_admin_role()
+  When click on create new button                                              # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                                      # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                                 # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                                          # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                                  # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                                             # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                                          # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                                  # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                                 # Parallel.PresentTest.click_on_present_button()
+  Then click on introduce button                                               # Parallel.PresentTest.click_on_introduce_button()
+  And check the validation message for introduce exhibit                       # Parallel.PresentTest.check_the_validation_message_for_introduce_exhibit()
+  Then click on DropDown Toggle show                                           # Parallel.PresentTest.click_on_drop_down_toggle_show()
+  And click on select dropdown                                                 # Parallel.PresentTest.click_on_select_dropdown()
+  Then click on sync button                                                    # Parallel.PresentTest.click_on_sync_button()
+  When click on dotted dropped menu of selected file                           # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  Then click on DropDown Toggle show                                           # Parallel.PresentTest.click_on_drop_down_toggle_show()
+  And click on select dropdown                                                 # Parallel.PresentTest.click_on_select_dropdown()
+  Then click on preview button                                                 # Parallel.PresentTest.click_on_preview_button()
+  When click on dotted dropped menu of selected file                           # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  Then click on DropDown Toggle show                                           # Parallel.PresentTest.click_on_drop_down_toggle_show()
+  Then click on switch Previewer Status button                                 # Parallel.PresentTest.click_on_switch_previewer_status_button()
+  Then click on cancle button                                                  # Parallel.PresentTest.click_on_cancle_button()
+  When click on dotted dropped menu of created deposition                      # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                                   # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                                     # Parallel.CreateDepositionTest.click_on_yes_button()
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking Invite link functionality of caseUp with admin&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](4)" classname="Parallel.ParallelRun" time="31.555">
+    <failure message="timeout: Timed out receiving message from renderer: 28.700&#10;  (Session info: chrome=121.0.6167.161)&#10;Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [2b481fb890c8e246972ea77e7234900b, get {url=https://staging.virtualdepo.com/manager/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58542}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58542/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2b481fb890c8e246972ea77e7234900b" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 28.700
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b481fb890c8e246972ea77e7234900b, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58542}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58542/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b481fb890c8e246972ea77e7234900b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+]]></failure>
+    <system-out><![CDATA[
+@Present
+Scenario: Checking Invite link functionality of caseUp with admin # src/test/resources/Parallel/Present.feature:515
+browser value is: chrome
+      org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.700
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b481fb890c8e246972ea77e7234900b, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58542}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58542/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b481fb890c8e246972ea77e7234900b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+
+  Given user navigate to the caseup baseurl                       # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with admin role                                      # Parallel.PresentTest.login_with_admin_role()
+  When click on create new button                                 # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                         # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                    # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                             # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                     # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                                # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                             # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                     # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                    # Parallel.PresentTest.click_on_present_button()
+  Then click on introduce button                                  # Parallel.PresentTest.click_on_introduce_button()
+  And check the validation message for introduce exhibit          # Parallel.PresentTest.check_the_validation_message_for_introduce_exhibit()
+  Then click on invite link button                                # Parallel.PresentTest.click_on_invite_link_button()
+  And click on copy link button and open new window               # Parallel.PresentTest.click_on_copy_link_button()
+  Then open new window                                            # Parallel.PresentTest.open_new_window()
+  And click on view exhibits button                               # Parallel.PresentTest.click_on_view_exhibits_button()
+  Then enter your name                                            # Parallel.PresentTest.enter_your_name()
+  And press continue button                                       # Parallel.PresentTest.press_continue_button()
+  Then enter your email                                           # Parallel.PresentTest.enter_your_email()
+  And press continue button                                       # Parallel.PresentTest.press_continue_button()
+  Then Download the file                                          # Parallel.PresentTest.download_the_file()
+  Then Cancle the current window and go to pevious window         # Parallel.PresentTest.cancle_the_current_window_and_go_to_pevious_window()
+  Then Click on cancle button of invite link button               # Parallel.PresentTest.click_on_cancle_button_of_invite_link_button()
+  Then click on cancle button                                     # Parallel.PresentTest.click_on_cancle_button()
+  When click on dotted dropped menu of created deposition         # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                      # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                        # Parallel.CreateDepositionTest.click_on_yes_button()
+
+    Embedding Checking_Invite_link_functionality_of_caseUp_with_admin [image/png 84065 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking guest functionality of caseUp&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](5)" classname="Parallel.ParallelRun" time="31.508">
+    <failure message="timeout: Timed out receiving message from renderer: 28.240&#10;  (Session info: chrome=121.0.6167.161)&#10;Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6c6b502f73995535b47ea40abeddecc8, get {url=https://staging.virtualdepo.com/manager/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58586}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58586/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6c6b502f73995535b47ea40abeddecc8" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 28.240
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c6b502f73995535b47ea40abeddecc8, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58586}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58586/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c6b502f73995535b47ea40abeddecc8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+]]></failure>
+    <system-out><![CDATA[
+@Present
+Scenario: Checking guest functionality of caseUp # src/test/resources/Parallel/Present.feature:544
+browser value is: chrome
+      org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.240
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c6b502f73995535b47ea40abeddecc8, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58586}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58586/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c6b502f73995535b47ea40abeddecc8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+
+  Given user navigate to the caseup baseurl      # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with guest role                     # Parallel.PresentTest.login_with_guest_role()
+  When check create button is visible or not     # Parallel.PresentTest.check_create_button_is_visible_or_not()
+
+    Embedding Checking_guest_functionality_of_caseUp [image/png 86301 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking basic functionality of caseUp&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](6)" classname="Parallel.ParallelRun" time="31.648">
+    <failure message="timeout: Timed out receiving message from renderer: 28.512&#10;  (Session info: chrome=121.0.6167.161)&#10;Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5c4bb44c53349bdb157da28d04f72bf0, get {url=https://staging.virtualdepo.com/manager/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58627}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58627/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5c4bb44c53349bdb157da28d04f72bf0" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 28.512
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c4bb44c53349bdb157da28d04f72bf0, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58627}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58627/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c4bb44c53349bdb157da28d04f72bf0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+]]></failure>
+    <system-out><![CDATA[
+@Present
+Scenario: Checking basic functionality of caseUp # src/test/resources/Parallel/Present.feature:548
+browser value is: chrome
+      org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.512
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c4bb44c53349bdb157da28d04f72bf0, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58627}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58627/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c4bb44c53349bdb157da28d04f72bf0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+
+  Given user navigate to the caseup baseurl      # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with basic role                     # Parallel.PresentTest.login_with_basic_role()
+  When check create button is visible            # Parallel.PresentTest.check_create_button_is_visible()
+
+    Embedding Checking_basic_functionality_of_caseUp [image/png 86022 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking introduce exhibit functionality of caseUp with basic&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](7)" classname="Parallel.ParallelRun" time="57.576">
+    <system-out><![CDATA[
+@Present
+Scenario: Checking introduce exhibit functionality of caseUp with basic # src/test/resources/Parallel/Present.feature:552
+browser value is: chrome
+  Given user navigate to the caseup baseurl                             # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with basic role                                            # Parallel.PresentTest.login_with_basic_role()
+  When click on create new button                                       # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                               # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                          # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                                   # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                           # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                                      # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                                   # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                           # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                          # Parallel.PresentTest.click_on_present_button()
+  Then click on upload icon                                             # Parallel.PresentTest.click_on_upload_icon()
+  And upload the image                                                  # Parallel.PresentTest.upload_the_image()
+  Then click on search button                                           # Parallel.PresentTest.click_on_search_button()
+  And select the inputbox and type what you want to search              # Parallel.PresentTest.select_the_inputbox_and_type_what_you_want_to_search()
+  Then check file is present or not                                     # Parallel.PresentTest.check_file_is_present_or_not()
+  Then click on cancle button                                           # Parallel.PresentTest.click_on_cancle_button()
+  When click on dotted dropped menu of created deposition               # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                            # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                              # Parallel.CreateDepositionTest.click_on_yes_button()
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking the upload functionality of CaseUp with basic&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](8)" classname="Parallel.ParallelRun" time="114.776">
+    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(.,&apos;Delete&apos;)]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[contains(.,'Delete')]' (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.qa.factory.WebDriverUtil.waitForElementToBeClickable(WebDriverUtil.java:31)
+	at com.qa.pages.CreateDeposition.clickOnDeleteButton(CreateDeposition.java:279)
+	at Parallel.CreateDepositionTest.click_on_delete_button(CreateDepositionTest.java:175)
+	at ✽.click on delete button(file:///C:/Users/ui-qa-22-1/Documents/Duplicate%20CaseUp/Duplicate%20CaseUp/./src/test/resources/Parallel/Present.feature:586)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(.,'Delete')]"}
+  (Session info: chrome=121.0.6167.161)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6116e4c4e2e2b5f328f564a591062a8, findElement {using=xpath, value=//a[contains(.,'Delete')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58771}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58771/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6116e4c4e2e2b5f328f564a591062a8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.qa.factory.WebDriverUtil.waitForElementToBeClickable(WebDriverUtil.java:31)
+	at com.qa.pages.CreateDeposition.clickOnDeleteButton(CreateDeposition.java:279)
+	at Parallel.CreateDepositionTest.click_on_delete_button(CreateDepositionTest.java:175)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+]]></failure>
+    <system-out><![CDATA[
+@Present
+Scenario: Checking the upload functionality of CaseUp with basic # src/test/resources/Parallel/Present.feature:573
+browser value is: chrome
+  Given user navigate to the caseup baseurl                      # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with basic role                                     # Parallel.PresentTest.login_with_basic_role()
+  When click on create new button                                # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                        # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                   # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                            # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                    # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                               # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  Then click in submit button                                    # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                   # Parallel.PresentTest.click_on_present_button()
+  Then click on upload click button                              # Parallel.PresentTest.click_on_upload_click_button()
+  Then click on cancle button                                    # Parallel.PresentTest.click_on_cancle_button()
+  When click on dotted dropped menu of created deposition        # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                     # Parallel.CreateDepositionTest.click_on_delete_button()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[contains(.,'Delete')]' (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.qa.factory.WebDriverUtil.waitForElementToBeClickable(WebDriverUtil.java:31)
+	at com.qa.pages.CreateDeposition.clickOnDeleteButton(CreateDeposition.java:279)
+	at Parallel.CreateDepositionTest.click_on_delete_button(CreateDepositionTest.java:175)
+	at âœ½.click on delete button(file:///C:/Users/ui-qa-22-1/Documents/Duplicate%20CaseUp/Duplicate%20CaseUp/./src/test/resources/Parallel/Present.feature:586)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(.,'Delete')]"}
+  (Session info: chrome=121.0.6167.161)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6116e4c4e2e2b5f328f564a591062a8, findElement {using=xpath, value=//a[contains(.,'Delete')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58771}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58771/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6116e4c4e2e2b5f328f564a591062a8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.qa.factory.WebDriverUtil.waitForElementToBeClickable(WebDriverUtil.java:31)
+	at com.qa.pages.CreateDeposition.clickOnDeleteButton(CreateDeposition.java:279)
+	at Parallel.CreateDepositionTest.click_on_delete_button(CreateDepositionTest.java:175)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+  Then click on yes button                                       # Parallel.CreateDepositionTest.click_on_yes_button()
+
+    Embedding Checking_the_upload_functionality_of_CaseUp_with_basic [image/png 579666 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking introduce exhibit functionality of caseUp with basic&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](9)" classname="Parallel.ParallelRun" time="57.944">
+    <system-out><![CDATA[
+@Present
+Scenario: Checking introduce exhibit functionality of caseUp with basic # src/test/resources/Parallel/Present.feature:589
+browser value is: chrome
+  Given user navigate to the caseup baseurl                             # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with basic role                                            # Parallel.PresentTest.login_with_basic_role()
+  When click on create new button                                       # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                               # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                          # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                                   # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                           # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                                      # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                                   # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                           # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                          # Parallel.PresentTest.click_on_present_button()
+  Then click on introduce button                                        # Parallel.PresentTest.click_on_introduce_button()
+  And check the validation message for introduce exhibit                # Parallel.PresentTest.check_the_validation_message_for_introduce_exhibit()
+  When click on dotted dropped menu of selected file                    # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  Then click on undo exhibit button                                     # Parallel.PresentTest.click_on_undo_exhibit_button()
+  And click on yes button for undo deposition                           # Parallel.PresentTest.click_on_yes_button_for_undo_deposition()
+  Then click on cancle button                                           # Parallel.PresentTest.click_on_cancle_button()
+  When click on dotted dropped menu of created deposition               # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                            # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                              # Parallel.CreateDepositionTest.click_on_yes_button()
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking introduce exhibit functionality for blank exhibit number of caseUp with basic&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](10)" classname="Parallel.ParallelRun" time="31.555">
+    <failure message="timeout: Timed out receiving message from renderer: 28.302&#10;  (Session info: chrome=121.0.6167.161)&#10;Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [d593338f87b1dc28532c7a3afd0ac358, get {url=https://staging.virtualdepo.com/manager/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58984}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58984/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d593338f87b1dc28532c7a3afd0ac358" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 28.302
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d593338f87b1dc28532c7a3afd0ac358, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58984}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58984/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d593338f87b1dc28532c7a3afd0ac358
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+]]></failure>
+    <system-out><![CDATA[
+@Present
+Scenario: Checking introduce exhibit functionality for blank exhibit number of caseUp with basic # src/test/resources/Parallel/Present.feature:610
+browser value is: chrome
+      org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.302
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d593338f87b1dc28532c7a3afd0ac358, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58984}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58984/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d593338f87b1dc28532c7a3afd0ac358
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+
+  Given user navigate to the caseup baseurl                                                      # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with basic role                                                                     # Parallel.PresentTest.login_with_basic_role()
+  When click on create new button                                                                # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                                                        # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                                                   # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                                                            # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                                                    # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                                                               # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                                                            # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                                                    # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                                                   # Parallel.PresentTest.click_on_present_button()
+  And change the exhibit number to empty                                                         # Parallel.PresentTest.change_the_exhibit_number_to_empty()
+  Then click on introduce button                                                                 # Parallel.PresentTest.click_on_introduce_button()
+  And check the validation message for introduce exhibit with empty value                        # Parallel.PresentTest.check_the_validation_message_for_introduce_exhibit_with_empty_value()
+  And change the exhibit number to value                                                         # Parallel.PresentTest.change_the_exhibit_number_to_value()
+  Then click on introduce button                                                                 # Parallel.PresentTest.click_on_introduce_button()
+  And check the validation message for introduce exhibit                                         # Parallel.PresentTest.check_the_validation_message_for_introduce_exhibit()
+  When click on dotted dropped menu of selected file                                             # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  Then click on undo exhibit button                                                              # Parallel.PresentTest.click_on_undo_exhibit_button()
+  And click on yes button for undo deposition                                                    # Parallel.PresentTest.click_on_yes_button_for_undo_deposition()
+  Then click on cancle button                                                                    # Parallel.PresentTest.click_on_cancle_button()
+  When click on dotted dropped menu of created deposition                                        # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                                                     # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                                                       # Parallel.CreateDepositionTest.click_on_yes_button()
+
+    Embedding Checking_introduce_exhibit_functionality_for_blank_exhibit_number_of_caseUp_with_basic [image/png 86301 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking undo shared functionality of caseUp with basic&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](11)" classname="Parallel.ParallelRun" time="57.918">
+    <failure message="stale element reference: stale element not found&#10;  (Session info: chrome=121.0.6167.161)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception&#10;Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ba7195be85526b787f79534a99a0aa4c, clickElement {id=7D31DF2D31745557E9377B38D5593F54_element_243}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59028/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (ba7195be85526b787f79534a99a0aa4c)] -&gt; xpath: (//*[name()=&apos;svg&apos;])[11]]&#10;Session ID: ba7195be85526b787f79534a99a0aa4c" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.161)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ba7195be85526b787f79534a99a0aa4c, clickElement {id=7D31DF2D31745557E9377B38D5593F54_element_243}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59028/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ba7195be85526b787f79534a99a0aa4c)] -> xpath: (//*[name()='svg'])[11]]
+Session ID: ba7195be85526b787f79534a99a0aa4c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at com.qa.pages.Present.clickOnCancleButtonForSharedSection(Present.java:235)
+	at Parallel.PresentTest.click_on_cancle_button_for_shared_section(PresentTest.java:65)
+	at ✽.click on cancle button for shared section(file:///C:/Users/ui-qa-22-1/Documents/Duplicate%20CaseUp/Duplicate%20CaseUp/./src/test/resources/Parallel/Present.feature:652)
+]]></failure>
+    <system-out><![CDATA[
+@Present
+Scenario: Checking undo shared functionality of caseUp with basic # src/test/resources/Parallel/Present.feature:635
+browser value is: chrome
+  Given user navigate to the caseup baseurl                       # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with basic role                                      # Parallel.PresentTest.login_with_basic_role()
+  When click on create new button                                 # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                         # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                    # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                             # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                     # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                                # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                             # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                     # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                    # Parallel.PresentTest.click_on_present_button()
+  Then click on introduce button                                  # Parallel.PresentTest.click_on_introduce_button()
+  And check the validation message for introduce exhibit          # Parallel.PresentTest.check_the_validation_message_for_introduce_exhibit()
+  Then click on shared button                                     # Parallel.PresentTest.click_on_shared_button()
+  When click on dotted dropped menu of selected file              # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  Then click on undo exhibit button                               # Parallel.PresentTest.click_on_undo_exhibit_button()
+  And click on yes button for undo deposition                     # Parallel.PresentTest.click_on_yes_button_for_undo_deposition()
+  Then click on cancle button for shared section                  # Parallel.PresentTest.click_on_cancle_button_for_shared_section()
+      org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.161)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ba7195be85526b787f79534a99a0aa4c, clickElement {id=7D31DF2D31745557E9377B38D5593F54_element_243}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59028/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ba7195be85526b787f79534a99a0aa4c)] -> xpath: (//*[name()='svg'])[11]]
+Session ID: ba7195be85526b787f79534a99a0aa4c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at com.qa.pages.Present.clickOnCancleButtonForSharedSection(Present.java:235)
+	at Parallel.PresentTest.click_on_cancle_button_for_shared_section(PresentTest.java:65)
+	at âœ½.click on cancle button for shared section(file:///C:/Users/ui-qa-22-1/Documents/Duplicate%20CaseUp/Duplicate%20CaseUp/./src/test/resources/Parallel/Present.feature:652)
+
+  When click on dotted dropped menu of created deposition         # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                      # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                        # Parallel.CreateDepositionTest.click_on_yes_button()
+
+    Embedding Checking_undo_shared_functionality_of_caseUp_with_basic [image/png 38581 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking edit exhibit functionality of caseUp with basic&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](12)" classname="Parallel.ParallelRun" time="72.34">
+    <system-out><![CDATA[
+@Present
+Scenario: Checking edit exhibit functionality of caseUp with basic # src/test/resources/Parallel/Present.feature:657
+browser value is: chrome
+  Given user navigate to the caseup baseurl                        # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with basic role                                       # Parallel.PresentTest.login_with_basic_role()
+  When click on create new button                                  # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                          # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                     # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                              # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                      # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                                 # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                              # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                      # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                     # Parallel.PresentTest.click_on_present_button()
+  Then click on introduce button                                   # Parallel.PresentTest.click_on_introduce_button()
+  And check the validation message for introduce exhibit           # Parallel.PresentTest.check_the_validation_message_for_introduce_exhibit()
+  When click on dotted dropped menu of selected file               # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  Then click on edit exhibit button                                # Parallel.PresentTest.click_on_edit_exhibit_button()
+  And change the exhibit number                                    # Parallel.PresentTest.change_the_exhibit_number()
+  Then click on save button                                        # Parallel.PresentTest.click_on_save_button()
+  And check the validation message for change exhibit number       # Parallel.PresentTest.check_the_validation_message_for_change_exhibit_number()
+  Then click on cancle button                                      # Parallel.PresentTest.click_on_cancle_button()
+  When click on dotted dropped menu of created deposition          # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                       # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                         # Parallel.CreateDepositionTest.click_on_yes_button()
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking rename exhibit functionality of caseUp with basic&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](13)" classname="Parallel.ParallelRun" time="31.483">
+    <failure message="timeout: Timed out receiving message from renderer: 28.744&#10;  (Session info: chrome=121.0.6167.161)&#10;Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4dd09ec1c4147e70594f8ee9ed56f0c0, get {url=https://staging.virtualdepo.com/manager/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59217}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59217/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4dd09ec1c4147e70594f8ee9ed56f0c0" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 28.744
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4dd09ec1c4147e70594f8ee9ed56f0c0, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59217}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59217/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4dd09ec1c4147e70594f8ee9ed56f0c0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+]]></failure>
+    <system-out><![CDATA[
+@Present
+Scenario: Checking rename exhibit functionality of caseUp with basic # src/test/resources/Parallel/Present.feature:680
+browser value is: chrome
+      org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.744
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4dd09ec1c4147e70594f8ee9ed56f0c0, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59217}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59217/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4dd09ec1c4147e70594f8ee9ed56f0c0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+
+  Given user navigate to the caseup baseurl                          # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with basic role                                         # Parallel.PresentTest.login_with_basic_role()
+  When click on create new button                                    # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                            # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                       # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                                # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                        # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                                   # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                                # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                        # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                       # Parallel.PresentTest.click_on_present_button()
+  Then click on introduce button                                     # Parallel.PresentTest.click_on_introduce_button()
+  And check the validation message for introduce exhibit             # Parallel.PresentTest.check_the_validation_message_for_introduce_exhibit()
+  When click on dotted dropped menu of selected file                 # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  Then click on rename button                                        # Parallel.PresentTest.click_on_rename_button()
+  And change the file name                                           # Parallel.PresentTest.change_the_file_name()
+  Then click on update button to save file                           # Parallel.PresentTest.click_on_update_button_to_save_file()
+  And check the validation message for change file name              # Parallel.PresentTest.check_the_validation_message_for_change_file_name()
+  Then click on cancle button                                        # Parallel.PresentTest.click_on_cancle_button()
+  When click on dotted dropped menu of created deposition            # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                         # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                           # Parallel.CreateDepositionTest.click_on_yes_button()
+
+    Embedding Checking_rename_exhibit_functionality_of_caseUp_with_basic [image/png 86262 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking rename exhibit functionality with empty data of caseUp with basic&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](14)" classname="Parallel.ParallelRun" time="71.307">
+    <system-out><![CDATA[
+@Present
+Scenario: Checking rename exhibit functionality with empty data of caseUp with basic # src/test/resources/Parallel/Present.feature:703
+browser value is: chrome
+  Given user navigate to the caseup baseurl                                          # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with basic role                                                         # Parallel.PresentTest.login_with_basic_role()
+  When click on create new button                                                    # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                                            # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                                       # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                                                # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                                        # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                                                   # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                                                # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                                        # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                                       # Parallel.PresentTest.click_on_present_button()
+  Then click on introduce button                                                     # Parallel.PresentTest.click_on_introduce_button()
+  And check the validation message for introduce exhibit                             # Parallel.PresentTest.check_the_validation_message_for_introduce_exhibit()
+  When click on dotted dropped menu of selected file                                 # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  Then click on rename button                                                        # Parallel.PresentTest.click_on_rename_button()
+  And change the file name to empty                                                  # Parallel.PresentTest.change_the_file_name_to_empty()
+  Then click on update button to save file                                           # Parallel.PresentTest.click_on_update_button_to_save_file()
+  And check the validation message for change file name with empty data              # Parallel.PresentTest.check_the_validation_message_for_change_file_name_with_empty_data()
+  And change the file name                                                           # Parallel.PresentTest.change_the_file_name()
+  Then click on update button to save file                                           # Parallel.PresentTest.click_on_update_button_to_save_file()
+  And check the validation message for change file name                              # Parallel.PresentTest.check_the_validation_message_for_change_file_name()
+  Then click on cancle button                                                        # Parallel.PresentTest.click_on_cancle_button()
+  When click on dotted dropped menu of created deposition                            # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                                         # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                                           # Parallel.CreateDepositionTest.click_on_yes_button()
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking previous exhibit functionality of caseUp with basic&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](15)" classname="Parallel.ParallelRun" time="31.538">
+    <failure message="timeout: Timed out receiving message from renderer: 28.628&#10;  (Session info: chrome=121.0.6167.161)&#10;Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [1009133eadd090fd4ecdd505b6f38c56, get {url=https://staging.virtualdepo.com/manager/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59370}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59370/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 1009133eadd090fd4ecdd505b6f38c56" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 28.628
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1009133eadd090fd4ecdd505b6f38c56, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59370}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59370/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1009133eadd090fd4ecdd505b6f38c56
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+]]></failure>
+    <system-out><![CDATA[
+@Present
+Scenario: Checking previous exhibit functionality of caseUp with basic # src/test/resources/Parallel/Present.feature:729
+browser value is: chrome
+      org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.628
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1009133eadd090fd4ecdd505b6f38c56, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59370}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59370/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1009133eadd090fd4ecdd505b6f38c56
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+
+  Given user navigate to the caseup baseurl                            # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with basic role                                           # Parallel.PresentTest.login_with_basic_role()
+  When click on create new button                                      # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                              # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                         # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                                  # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                          # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                                     # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                                  # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                          # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                         # Parallel.PresentTest.click_on_present_button()
+  Then click on new button                                             # Parallel.PresentTest.click_on_new_button()
+  And click on previous exhibit button                                 # Parallel.PresentTest.click_on_previous_exhibit_button()
+  Then click on share button                                           # Parallel.PresentTest.click_on_share_button()
+  Then click on shared button                                          # Parallel.PresentTest.click_on_shared_button()
+  When click on dotted dropped menu of selected file                   # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  Then click on undo exhibit button                                    # Parallel.PresentTest.click_on_undo_exhibit_button()
+  And click on yes button for undo deposition                          # Parallel.PresentTest.click_on_yes_button_for_undo_deposition()
+  Then click on cancle button for shared section                       # Parallel.PresentTest.click_on_cancle_button_for_shared_section()
+  When click on dotted dropped menu of created deposition              # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                           # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                             # Parallel.CreateDepositionTest.click_on_yes_button()
+
+    Embedding Checking_previous_exhibit_functionality_of_caseUp_with_basic [image/png 83835 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking download functionality of caseUp with basic&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](16)" classname="Parallel.ParallelRun" time="56.799">
+    <system-out><![CDATA[
+@Present
+Scenario: Checking download functionality of caseUp with basic # src/test/resources/Parallel/Present.feature:752
+browser value is: chrome
+  Given user navigate to the caseup baseurl                    # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with basic role                                   # Parallel.PresentTest.login_with_basic_role()
+  When click on create new button                              # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                      # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                 # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                          # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                  # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                             # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                          # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                  # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                 # Parallel.PresentTest.click_on_present_button()
+  When click on dotted dropped menu of selected file           # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  And click on download button                                 # Parallel.PresentTest.click_on_download_button()
+  Then click on introduce button                               # Parallel.PresentTest.click_on_introduce_button()
+  Then click on shared button                                  # Parallel.PresentTest.click_on_shared_button()
+  When click on dotted dropped menu of selected file           # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  And click on download button                                 # Parallel.PresentTest.click_on_download_button()
+  Then click on cancle button for shared section               # Parallel.PresentTest.click_on_cancle_button_for_shared_section()
+  When click on dotted dropped menu of created deposition      # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                   # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                     # Parallel.CreateDepositionTest.click_on_yes_button()
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking sync and preview exhibit functionality of caseUp with basic&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](17)" classname="Parallel.ParallelRun" time="31.625">
+    <failure message="timeout: Timed out receiving message from renderer: 28.372&#10;  (Session info: chrome=121.0.6167.161)&#10;Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [cae8d65501c210fa8a0e2e5839d52322, get {url=https://staging.virtualdepo.com/manager/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59498/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: cae8d65501c210fa8a0e2e5839d52322" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 28.372
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cae8d65501c210fa8a0e2e5839d52322, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59498/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cae8d65501c210fa8a0e2e5839d52322
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+]]></failure>
+    <system-out><![CDATA[
+@Present
+Scenario: Checking sync and preview exhibit functionality of caseUp with basic # src/test/resources/Parallel/Present.feature:774
+browser value is: chrome
+      org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.372
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cae8d65501c210fa8a0e2e5839d52322, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59498/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cae8d65501c210fa8a0e2e5839d52322
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+
+  Given user navigate to the caseup baseurl                                    # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with basic role                                                   # Parallel.PresentTest.login_with_basic_role()
+  When click on create new button                                              # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                                      # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                                 # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                                          # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                                  # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                                             # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                                          # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                                  # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                                 # Parallel.PresentTest.click_on_present_button()
+  Then click on introduce button                                               # Parallel.PresentTest.click_on_introduce_button()
+  And check the validation message for introduce exhibit                       # Parallel.PresentTest.check_the_validation_message_for_introduce_exhibit()
+  Then click on DropDown Toggle show                                           # Parallel.PresentTest.click_on_drop_down_toggle_show()
+  And click on select dropdown                                                 # Parallel.PresentTest.click_on_select_dropdown()
+  Then click on sync button                                                    # Parallel.PresentTest.click_on_sync_button()
+  When click on dotted dropped menu of selected file                           # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  Then click on DropDown Toggle show                                           # Parallel.PresentTest.click_on_drop_down_toggle_show()
+  And click on select dropdown                                                 # Parallel.PresentTest.click_on_select_dropdown()
+  Then click on preview button                                                 # Parallel.PresentTest.click_on_preview_button()
+  When click on dotted dropped menu of selected file                           # Parallel.PresentTest.click_on_dotted_dropped_menu_of_selected_file()
+  Then click on DropDown Toggle show                                           # Parallel.PresentTest.click_on_drop_down_toggle_show()
+  Then click on switch Previewer Status button                                 # Parallel.PresentTest.click_on_switch_previewer_status_button()
+  Then click on cancle button                                                  # Parallel.PresentTest.click_on_cancle_button()
+  When click on dotted dropped menu of created deposition                      # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                                   # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                                     # Parallel.CreateDepositionTest.click_on_yes_button()
+
+    Embedding Checking_sync_and_preview_exhibit_functionality_of_caseUp_with_basic [image/png 86301 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Checking Invite link functionality of caseUp with basic&quot;, &quot;Optional[Testing the present functionality of caseUp]&quot;](18)" classname="Parallel.ParallelRun" time="31.532">
+    <failure message="timeout: Timed out receiving message from renderer: 27.824&#10;  (Session info: chrome=121.0.6167.161)&#10;Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [d97bbee0c360462731fe564928eac949, get {url=https://staging.virtualdepo.com/manager/login}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59541}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59541/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d97bbee0c360462731fe564928eac949" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 27.824
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d97bbee0c360462731fe564928eac949, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59541}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59541/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d97bbee0c360462731fe564928eac949
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+]]></failure>
+    <system-out><![CDATA[
+@Present
+Scenario: Checking Invite link functionality of caseUp with basic # src/test/resources/Parallel/Present.feature:802
+browser value is: chrome
+      org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 27.824
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d97bbee0c360462731fe564928eac949, get {url=https://staging.virtualdepo.com/manager/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\UI-QA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59541}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59541/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d97bbee0c360462731fe564928eac949
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at Parallel.ApplicationHooks.navigate_to_CaseUp(ApplicationHooks.java:37)
+
+  Given user navigate to the caseup baseurl                       # Parallel.LoginTest.user_navigate_to_the_caseup_baseurl()
+  When login with basic role                                      # Parallel.PresentTest.login_with_basic_role()
+  When click on create new button                                 # Parallel.CreateDepositionTest.click_on_create_new_button()
+  Then enter witness name                                         # Parallel.CreateDepositionTest.enter_witness_name()
+  And enter noticing firm name                                    # Parallel.CreateDepositionTest.enter_noticing_firm_name()
+  And enter case name                                             # Parallel.CreateDepositionTest.enter_case_name()
+  Then click on create button                                     # Parallel.CreateDepositionTest.click_on_create_button()
+  Then click on upload file button                                # Parallel.CreateDepositionTest.click_on_upload_file_button()
+  And upload the file                                             # Parallel.CreateDepositionTest.upload_the_file()
+  Then click in submit button                                     # Parallel.CreateDepositionTest.click_in_submit_button()
+  Then click on present button                                    # Parallel.PresentTest.click_on_present_button()
+  Then click on introduce button                                  # Parallel.PresentTest.click_on_introduce_button()
+  And check the validation message for introduce exhibit          # Parallel.PresentTest.check_the_validation_message_for_introduce_exhibit()
+  Then click on invite link button                                # Parallel.PresentTest.click_on_invite_link_button()
+  And click on copy link button and open new window               # Parallel.PresentTest.click_on_copy_link_button()
+  Then open new window                                            # Parallel.PresentTest.open_new_window()
+  And click on view exhibits button                               # Parallel.PresentTest.click_on_view_exhibits_button()
+  Then enter your name                                            # Parallel.PresentTest.enter_your_name()
+  And press continue button                                       # Parallel.PresentTest.press_continue_button()
+  Then enter your email                                           # Parallel.PresentTest.enter_your_email()
+  And press continue button                                       # Parallel.PresentTest.press_continue_button()
+  Then Download the file                                          # Parallel.PresentTest.download_the_file()
+  Then Cancle the current window and go to pevious window         # Parallel.PresentTest.cancle_the_current_window_and_go_to_pevious_window()
+  Then Click on cancle button of invite link button               # Parallel.PresentTest.click_on_cancle_button_of_invite_link_button()
+  Then click on cancle button                                     # Parallel.PresentTest.click_on_cancle_button()
+  When click on dotted dropped menu of created deposition         # Parallel.CreateDepositionTest.click_on_dotted_dropped_menu_of_created_deposition()
+  And click on delete button                                      # Parallel.CreateDepositionTest.click_on_delete_button()
+  Then click on yes button                                        # Parallel.CreateDepositionTest.click_on_yes_button()
+
+    Embedding Checking_Invite_link_functionality_of_caseUp_with_basic [image/png 83761 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ui-qa-22-1\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
+]]></system-err>
+  </testcase>
+</testsuite>
